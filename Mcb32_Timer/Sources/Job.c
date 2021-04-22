@@ -2,7 +2,7 @@
 // FILE NAME    Job.c
 // LANGUAGE     C
 //
-// DESCRIPTION  Job to do
+// DESCRIPTION  Vorlage fuer Timer
 //
 //-------------------------------------------------------------------------------------------------
 
@@ -26,12 +26,11 @@ const UInt32 CountCycleTimeFast =  1000; // Count in 100 us (timer ticks) for a 
 void InitJob(void)
 {
     setScreenDir(VER);			    //LCD vertical
-    printAt(0, "Beispiel Timer Interrupt");  //line 0: title
+    printAt(0, "Timer-Interrupt");  //line 0: title
     printAt(9, "Beachte: RunLed!");
     printAt(10, "Test: Zeichnen auskommentieren");
     setTextcolor(YELLOW);
 }   // InitJob()
-
 
 //--------------------------------------------------------------------------------------------------
 // Job to do
@@ -76,7 +75,6 @@ void JobHandler(void)
     }	
 			
 }   // JobHandler()
-
 
 //-------------------------------------------------------------------------------------------------
 // EOF Job.c
