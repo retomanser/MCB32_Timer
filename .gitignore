@@ -1,0 +1,9 @@
+# ignore all files in any directory named build
+List/
+Object/
+
+# ignore
+*.scvd
+*.uvguix.*
+
+
