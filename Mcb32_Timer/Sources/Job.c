@@ -2,8 +2,8 @@
 // FILE NAME    Job.c
 // LANGUAGE     C
 //
-// DESCRIPTION  Vorlage fuer Timer
-//
+// DESCRIPTION 
+// 142_1: led2 blinks with timer6
 //-------------------------------------------------------------------------------------------------
 
 #include "stm32f10x.h"
