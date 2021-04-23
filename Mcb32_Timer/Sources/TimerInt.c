@@ -14,8 +14,14 @@
 //--------------------------------------------------------------------------------------------------
 // Defines and constants
 // blinking frequency: 2 Hz -> every 250ms toggle the LED, interrupt after 250ms
-const UInt16 Timer7Prescaler  = 7199; // 72MHz -> clock every 100us
-const UInt16 Timer7Autoreload = 2499; // 2500 x 100us -> 250ms
+// const UInt16 Timer7Prescaler  = 7199; // 72MHz -> clock every 100us - old values
+// const UInt16 Timer7Autoreload = 2499; // 2500 x 100us -> 250ms - old values
+
+// new numbers to set ARR to a Maximum of 1^16 -> 65536
+// 7200 x 2500 / 65536 = 274 -> for Prescaler
+const UInt16 Timer7Prescaler  = 287; // 72MHz -> clock every 4us ( 72e6 x (287+1))
+const UInt16 Timer7Autoreload = 62500; // 62500 x 4us -> 250ms 
+ 
 
 //--------------------------------------------------------------------------------------------------
 // Initialize the external Interrupt
