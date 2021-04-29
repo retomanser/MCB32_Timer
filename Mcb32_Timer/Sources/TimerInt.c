@@ -20,7 +20,7 @@
 // new numbers to set ARR to a Maximum of 1^16 -> 65536
 // 7200 x 2500 / 65536 = 274 -> for Prescaler
 const UInt16 Timer7Prescaler  = 287; // 72MHz -> clock every 4us ( 72e6 x (287+1))
-const UInt16 Timer7Autoreload = 62500; // 62500 x 4us -> 250ms 
+const UInt16 Timer7Autoreload = 62499; // (62499+1) x 4us -> 250ms 
  
 
 //--------------------------------------------------------------------------------------------------
